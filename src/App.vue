@@ -1,13 +1,16 @@
 <template>
   
-  <HelloWorld/>
-  <ButtonComponent/>
+  <!-- <HelloWorld/>
+  <ButtonComponent/> -->
+  <TodoList/>
+  
   
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import ButtonComponent from "./components/Button.vue"
+
+
+import TodoList from './components/TodoList.vue';
 
 
 
@@ -15,8 +18,10 @@ import ButtonComponent from "./components/Button.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    ButtonComponent
+    // HelloWorld,
+    // ButtonComponent,
+    TodoList
+    
   }
 }
 </script>
