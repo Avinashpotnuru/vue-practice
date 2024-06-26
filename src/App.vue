@@ -1,29 +1,46 @@
 <template>
-  
   <!-- <HelloWorld/>
   <ButtonComponent/> -->
-  <TodoList/>
-  
-  
+  <!-- <TodoList />
+
+  <ChildOne />
+  <input type="text" v-model="username" placeholder="write" />
+  <Card title="avinash"/>
+  <Card><h3>hello </h3></Card> -->
+  <FetchingData/>
 </template>
 
 <script>
-
-
-import TodoList from './components/TodoList.vue';
-
-
-
+// import TodoList from "./components/TodoList.vue";
+// import ChildOne from "./components/Child.vue";
+// import Card from "./components/Card.vue";
+import FetchingData from "./components/FetchingData.vue"
 
 export default {
-  name: 'App',
+  name: "App",
+  data() {
+    return {
+      username: "",
+    };
+  },
   components: {
     // HelloWorld,
     // ButtonComponent,
-    TodoList
-    
-  }
-}
+    // TodoList,
+    // ChildOne,
+    // Card,
+    FetchingData
+  },
+  provide() {
+    return {
+      name: this.username,
+      
+
+    }
+
+   
+  },
+};
 </script>
 
 <style>
